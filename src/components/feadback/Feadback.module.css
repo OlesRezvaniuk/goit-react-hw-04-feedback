@@ -3,6 +3,10 @@
   background-color: azure;
   width: 300px;
   margin: auto;
+  box-shadow: 0px 0px 4px;
+  position: relative;
+  height: 150px;
+  z-index: 5;
 }
 
 .title {
@@ -10,15 +14,65 @@
   font-weight: 400;
 }
 
+.smile {
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+.button {
+  margin: 5px;
+  border: none;
+  padding: 5px 20px;
+  background-color: transparent;
+  box-shadow: 0px 0px 1px;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0px 0px 3px;
+}
+
 .statList {
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+  opacity: 1;
+  transition: 500ms;
+  background-color: azure;
+  box-shadow: inset 0px 0px 4px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  transform: translateY(100%);
+  width: 260px;
+}
+
+.statList1 {
+  transform: translateY(100%);
+  z-index: 2;
   padding: 0;
   margin: 0;
   list-style: none;
   padding: 20px;
+  opacity: 0;
+  transition: 500ms;
+  background-color: azure;
+  box-shadow: 0px 2px 2px;
+  position: absolute;
 }
 
 .statItem {
   display: flex;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.statItem:nth-child(5) {
+  border-bottom: none;
 }
 
 .statInfo {
