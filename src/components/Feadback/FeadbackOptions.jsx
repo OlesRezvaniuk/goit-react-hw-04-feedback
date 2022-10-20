@@ -1,22 +1,20 @@
 import React from 'react';
 import css from './Feadback.module.css';
 
-export const FeadbackOptions = ({
-  onGoodIncrement,
-  onNeutralIncrement,
-  onBadIncrement,
-}) => {
+export const FeadbackOptions = ({ onHandleIncrement, array }) => {
   return (
     <>
-      <button type="button" className={css.button} onClick={onGoodIncrement}>
-        Good
-      </button>
-      <button type="button" className={css.button} onClick={onNeutralIncrement}>
-        Neutral
-      </button>
-      <button type="button" className={css.button} onClick={onBadIncrement}>
-        Bad
-      </button>
+      {array.map(arr => (
+        <button
+          key={arr.name}
+          name={arr.name}
+          type="button"
+          className={css.button}
+          onClick={onHandleIncrement}
+        >
+          {arr.title}
+        </button>
+      ))}
     </>
   );
 };
