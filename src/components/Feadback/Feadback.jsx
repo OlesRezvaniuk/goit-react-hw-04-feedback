@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import css from './Feedback.module.css';
-import { FeadbackOptions } from './FeadbackOptions';
-import { Statistics } from './Statistics';
+import { FeadbackOptions } from './FeadbackOptions/FeadbackOptions';
+import { Statistics } from './Statistics/Statistics';
 import { ButtonMap } from '../../data/ButtonsMap';
-import { Notification } from './Notification';
+import { Notification } from './Notification/Notification';
 
 export class Feadback extends Component {
   state = {
