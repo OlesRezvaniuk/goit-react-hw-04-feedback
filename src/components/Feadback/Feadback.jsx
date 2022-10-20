@@ -3,6 +3,7 @@ import css from './Feadback.module.css';
 import { FeadbackOptions } from './FeadbackOptions';
 import { Statistics } from './Statistics';
 import { ButtonMap } from '../../data/ButtonsMap';
+import { Notification } from './Notification';
 
 export class Feadback extends Component {
   state = {
@@ -35,9 +36,7 @@ export class Feadback extends Component {
           onHandleIncrement={this.handleIncrement}
           array={ButtonMap}
         />
-        <div className={this.getSumm() > 0 ? css.notificBox1 : css.notificBox}>
-          <h2 className={css.notificTitle}>There is not feadback</h2>
-        </div>
+        <Notification onGetSumm={this.getSumm()} />
         <Statistics
           onGood={good}
           onNeutral={neutral}
