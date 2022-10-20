@@ -59,6 +59,6 @@ Statistics.propTypes = {
   onGood: PropTypes.number.isRequired,
   onNeutral: PropTypes.number.isRequired,
   onBad: PropTypes.number.isRequired,
-  onCountTotalFeadback: PropTypes.number.isRequired,
+  onCountTotalFeadback: PropTypes.string.isRequired,
   onGetSumm: PropTypes.number.isRequired,
 };

@@ -11,5 +11,5 @@ export const Notification = ({ onGetSumm }) => {
 };
 
 Notification.propTypes = {
-  onGetSumm: PropTypes.string.isRequired,
+  onGetSumm: PropTypes.number.isRequired,
 };

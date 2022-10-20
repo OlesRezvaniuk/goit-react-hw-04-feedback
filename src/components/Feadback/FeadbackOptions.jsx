@@ -21,7 +21,7 @@ export const FeadbackOptions = ({ onHandleIncrement, array }) => {
 };
 
 FeadbackOptions.propTypes = {
-  onHandleIncrement: PropTypes.object.isRequired,
+  onHandleIncrement: PropTypes.func,
   array: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
