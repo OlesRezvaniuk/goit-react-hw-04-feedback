@@ -35,6 +35,9 @@ export class Feadback extends Component {
           onHandleIncrement={this.handleIncrement}
           array={ButtonMap}
         />
+        <div className={this.getSumm() > 0 ? css.notificBox1 : css.notificBox}>
+          <h2 className={css.notificTitle}>There is not feadback</h2>
+        </div>
         <Statistics
           onGood={good}
           onNeutral={neutral}
