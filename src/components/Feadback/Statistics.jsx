@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Feadback.module.css';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({
   onGood,
@@ -52,4 +53,12 @@ export const Statistics = ({
       </div>
     </>
   );
+};
+
+Statistics.propTypes = {
+  onGood: PropTypes.number.isRequired,
+  onNeutral: PropTypes.number.isRequired,
+  onBad: PropTypes.number.isRequired,
+  onCountTotalFeadback: PropTypes.number.isRequired,
+  onGetSumm: PropTypes.number.isRequired,
 };

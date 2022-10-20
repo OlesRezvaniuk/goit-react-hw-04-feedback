@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Feadback.module.css';
+import PropTypes from 'prop-types';
 
 export const FeadbackOptions = ({ onHandleIncrement, array }) => {
   return (
@@ -17,4 +18,14 @@ export const FeadbackOptions = ({ onHandleIncrement, array }) => {
       ))}
     </>
   );
+};
+
+FeadbackOptions.propTypes = {
+  onHandleIncrement: PropTypes.object.isRequired,
+  array: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ),
 };
