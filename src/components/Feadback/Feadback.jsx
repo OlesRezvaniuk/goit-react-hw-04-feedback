@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import css from './Feadback.module.css';
+import css from './Feedback.module.css';
 import { FeadbackOptions } from './FeadbackOptions';
 import { Statistics } from './Statistics';
 import { ButtonMap } from '../../data/ButtonsMap';

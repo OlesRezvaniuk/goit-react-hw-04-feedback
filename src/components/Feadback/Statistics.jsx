@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './Feadback.module.css';
+import css from './Feedback.module.css';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({
