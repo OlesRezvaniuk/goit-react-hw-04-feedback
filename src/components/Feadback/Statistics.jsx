@@ -38,13 +38,13 @@ export const Statistics = ({
                 <img
                   className={css.smile}
                   src="http://simpleicon.com/wp-content/uploads/smile.png"
-                  alt="smile"
+                  alt=":)"
                 />
               ) : (
                 <img
                   className={css.smile}
                   src="http://simpleicon.com/wp-content/uploads/sad.png"
-                  alt="smile"
+                  alt=":("
                 />
               )}
             </span>
