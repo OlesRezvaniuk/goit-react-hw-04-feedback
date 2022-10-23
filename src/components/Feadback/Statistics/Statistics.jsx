@@ -37,13 +37,13 @@ export const Statistics = ({
               {onCountTotalFeadback > 50 ? (
                 <img
                   className={css.smile}
-                  src="http://simpleicon.com/wp-content/uploads/smile.png"
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/tNYZpPkEnbp.png"
                   alt=":)"
                 />
               ) : (
                 <img
                   className={css.smile}
-                  src="http://simpleicon.com/wp-content/uploads/sad.png"
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/vAd0CBmjF8Y.png"
                   alt=":("
                 />
               )}
