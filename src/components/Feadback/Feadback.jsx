@@ -35,12 +35,14 @@ export class Feadback extends Component {
         <FeadbackOptions
           onHandleIncrement={this.handleIncrement}
           array={ButtonMap}
+          state={this.state}
         />
         <Notification onGetSumm={this.getSumm()} />
         <Statistics
           onGood={good}
           onNeutral={neutral}
           onBad={bad}
+          // onOptions={this.state}
           onCountTotalFeadback={countTotalFeadback}
           onGetSumm={this.getSumm()}
         />
