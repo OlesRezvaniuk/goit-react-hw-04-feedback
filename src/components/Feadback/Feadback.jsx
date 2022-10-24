@@ -34,8 +34,7 @@ export class Feadback extends Component {
         <h2 className={css.title}>Please leave feedback</h2>
         <FeadbackOptions
           onHandleIncrement={this.handleIncrement}
-          array={ButtonMap}
-          state={this.state}
+          stateKeys={Object.keys(this.state)}
         />
         <Notification onGetSumm={this.getSumm()} />
         <Statistics

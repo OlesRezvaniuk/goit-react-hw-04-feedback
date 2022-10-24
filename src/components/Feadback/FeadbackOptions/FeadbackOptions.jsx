@@ -2,13 +2,10 @@ import React from 'react';
 import css from '../Feedback.module.css';
 import PropTypes from 'prop-types';
 
-export const FeadbackOptions = ({ onHandleIncrement, state }) => {
-  const arrayState = Object.keys(state);
-
-  console.log(arrayState);
+export const FeadbackOptions = ({ onHandleIncrement, stateKeys }) => {
   return (
     <>
-      {arrayState.map(arr => (
+      {stateKeys.map(arr => (
         <button
           style={{ textTransform: 'capitalize' }}
           key={arr}
