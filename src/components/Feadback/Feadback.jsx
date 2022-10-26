@@ -35,14 +35,14 @@ export const Feadback = () => {
     <div className={css.box}>
       <h2 className={css.title}>Please leave feedback</h2>
       <FeadbackOptions onHandleIncrement={handleIncrement} onArrBtn={ArrBtn} />
-      {/* <Notification onGetSumm={this.getSumm()} /> */}
-      {/* <Statistics
-          onGood={good}
-          onNeutral={neutral}
-          onBad={bad}
-          onCountTotalFeadback={countTotalFeadback}
-          onGetSumm={this.getSumm()}
-        /> */}
+      <Notification onGetSumm={getSumm} />
+      <Statistics
+        onGood={good}
+        onNeutral={neutral}
+        onBad={bad}
+        onCountTotalFeadback={countTotalFeadback}
+        onGetSumm={getSumm}
+      />
     </div>
   );
 };
