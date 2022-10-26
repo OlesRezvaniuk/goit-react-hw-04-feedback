@@ -2,7 +2,6 @@ import { useState } from 'react';
 import css from './Feedback.module.css';
 import { FeadbackOptions } from './FeadbackOptions/FeadbackOptions';
 import { Statistics } from './Statistics/Statistics';
-import { ButtonMap } from '../../data/ButtonsMap';
 import { Notification } from './Notification/Notification';
 
 export const Feadback = () => {
