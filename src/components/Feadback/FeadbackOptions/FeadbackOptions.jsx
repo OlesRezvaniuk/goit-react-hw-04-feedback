@@ -2,19 +2,19 @@ import React from 'react';
 import css from '../Feedback.module.css';
 import PropTypes from 'prop-types';
 
-export const FeadbackOptions = ({ onHandleIncrement, stateKeys }) => {
+export const FeadbackOptions = ({ onHandleIncrement, onArrBtn }) => {
   return (
     <>
-      {stateKeys.map(arr => (
+      {onArrBtn.map(item => (
         <button
           style={{ textTransform: 'capitalize' }}
-          key={arr}
-          name={arr}
+          key={item.name}
+          name={item.name}
           type="button"
           className={css.button}
           onClick={onHandleIncrement}
         >
-          {arr}
+          {item.name}
         </button>
       ))}
     </>
@@ -23,7 +23,7 @@ export const FeadbackOptions = ({ onHandleIncrement, stateKeys }) => {
 
 FeadbackOptions.propTypes = {
   onHandleIncrement: PropTypes.func,
-  array: PropTypes.arrayOf(
+  onArrBtn: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
